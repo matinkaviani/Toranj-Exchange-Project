@@ -8881,3 +8881,9 @@ select:focus, button:focus {
 .footer.footer-dark {
     background-color: #0b1011;
 }
+.font-18 {
+    font-size: 18px;
+}
+.font-24 {
+    font-size: 24px;
+}

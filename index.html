@@ -97,40 +97,50 @@
                 <p class="text-center">
                     ارسـال حــواله‌های ارزی، امــن، سریع و مطمئن
                 </p>
-                <div class="col-md-8 m-auto">
-                    <div class="mt-5">
-                        <div class="tab" dir="rtl">
-                            <button class="tablinks active" onclick="changeTab(event, 'Calc')">محاسبه قیمت</button>
-                            <button class="tablinks" onclick="changeTab(event, 'Referred')">رهگیری حواله</button>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mt-5">
+                            <div class="tab" dir="rtl">
+                                <button class="tablinks active" onclick="changeTab(event, 'Calc')">محاسبه قیمت</button>
+                                <button class="tablinks" onclick="changeTab(event, 'Referred')">رهگیری حواله</button>
+                            </div>
+                            <div id="Calc" class="tabcontent display-block formtabs">
+                                <div class="input-group mt-3">
+                                    <input type="text" class="form-control" placeholder="  (AUD) مبلغ واریزی در مبدا" aria-label="Text input with dropdown button" />
+                                    <select class="form-control" name="countries" id="countries">
+                                        <option value="AU">استرالیا</option>
+                                        <option value="IR">ایران</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mt-3 mb-3">
+                                    <input type="text" class="form-control" placeholder="مبلغ دریافتی در مقصد (ریال)" aria-label="Text input with dropdown button" />
+                                    <select class="form-control" name="countries" id="countries">
+                                        <option value="IR">ایران</option>
+                                        <option value="AU">استرالیا</option>
+                                    </select>
+                                </div>
+                                <div class="text-center mt-3 mb-3">
+                                    <a href="#" class="btn btn-gold"> <i class="fa fa-arrow-left"></i> ثبت درخواست ارسال حواله</a>
+                                </div>
+                            </div>
+                            <div id="Referred" class="tabcontent">
+                                <div class="container mt-3">
+                                    <input type="text" class="form-control text-right reffer-code" placeholder="کد رهگیری خود را وارد نمایید" aria-label="Text input with dropdown button" />
+                                </div>
+                                <div class="text-center mt-3 mb-3">
+                                    <a href="#" class="btn btn-gold">مشاهده وضعیت</a>
+                                </div>
+                            </div>
                         </div>
-
-                        <div id="Calc" class="tabcontent display-block formtabs">
-                            <div class="input-group mt-3">
-                                <input type="text" class="form-control" placeholder="  (AUD) مبلغ واریزی در مبدا" aria-label="Text input with dropdown button" />
-                                <select class="form-control" name="countries" id="countries">
-                                    <option value="AU">استرالیا</option>
-                                    <option value="IR">ایران</option>
-                                </select>
-                            </div>
-                            <div class="input-group mt-3 mb-3">
-                                <input type="text" class="form-control" placeholder="مبلغ دریافتی در مقصد (ریال)" aria-label="Text input with dropdown button" />
-                                <select class="form-control" name="countries" id="countries">
-                                    <option value="IR">ایران</option>
-                                    <option value="AU">استرالیا</option>
-                                </select>
-                            </div>
-                            <div class="text-center mt-3 mb-3">
-                                <a href="#" class="btn btn-gold"> <i class="fa fa-arrow-left"></i> ثبت درخواست ارسال حواله</a>
-                            </div>
-                        </div>
-
-                        <div id="Referred" class="tabcontent">
-                            <div class="container mt-3">
-                                <input type="text" class="form-control text-right reffer-code" placeholder="کد رهگیری خود را وارد نمایید" aria-label="Text input with dropdown button" />
-                            </div>
-                            <div class="text-center mt-3 mb-3">
-                                <a href="#" class="btn btn-gold">مشاهده وضعیت</a>
-                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mt-5 text-right" dir="rtl">
+                            <h2 class="font-24">
+                                درخواست تماس ثبت کنید
+                            </h2>
+                            <p class="mt-2">
+                                صرافی ارز یک بستر مبادله ارز رمزنگاری شده است که بیش از 60 ارز رمزپایه مختلف از جمله بیت کوین شناخته شده و Ethereum ، را در خود جای داده است.
+                            </p>
                         </div>
                     </div>
                 </div>
