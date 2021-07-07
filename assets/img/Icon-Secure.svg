@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="Icon-Secure" width="140" height="124.5" viewBox="0 0 140 124.5">
     <defs>
         <linearGradient id="linear-gradient" x1=".5" x2=".5" y1=".576" gradientUnits="objectBoundingBox">
-            <stop offset="0" stop-color="#d6a15f"/>
-            <stop offset="1" stop-color="#ad8b6f"/>
+            <stop offset="0" stop-color="#37dba9"/>
+            <stop offset="1" stop-color="#01ad79"/>
         </linearGradient>
         <filter id="Rectangle-Copy" width="98.204" height="99.83" x="18.852" y="24.67" filterUnits="userSpaceOnUse">
             <feOffset dy="7"/>

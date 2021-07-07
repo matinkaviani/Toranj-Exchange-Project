@@ -15,8 +15,8 @@
             <feComposite in="SourceGraphic"/>
         </filter>
         <linearGradient id="linear-gradient" x1=".5" x2=".5" y1=".576" gradientUnits="objectBoundingBox">
-            <stop offset="0" stop-color="#d6a15f"/>
-            <stop offset="1" stop-color="#ad8b6f"/>
+            <stop offset="0" stop-color="#37dba9"/>
+            <stop offset="1" stop-color="#01ad79"/>
         </linearGradient>
         <style>
             .cls-1,.cls-3,.cls-4,.cls-6{fill:none}.cls-2{fill:url(#linear-gradient)}.cls-3,.cls-4{stroke:#060606}.cls-3,.cls-4,.cls-6{stroke-linecap:round;stroke-width:2px}.cls-4,.cls-6{stroke-linejoin:round}.cls-6{stroke:#fff}
