@@ -8902,3 +8902,15 @@ select:focus, button:focus {
 .en-font {
     font-family: Yekan-bakh;
 }
+.side-title {
+    position: relative;
+}
+.side-title:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 25px;
+    background: #37dba9;
+    right: -10px;
+    top: 15%;
+}
