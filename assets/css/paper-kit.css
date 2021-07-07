@@ -8894,3 +8894,11 @@ select:focus, button:focus {
 .font-24 {
     font-size: 24px;
 }
+.floating-label {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+.en-font {
+    font-family: poppins;
+}

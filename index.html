@@ -120,14 +120,16 @@
                             </div>
                             <div id="Calc" class="tabcontent display-block formtabs">
                                 <div class="input-group mt-3">
-                                    <input type="text" class="form-control" placeholder="  (AUD) مبلغ واریزی در مبدا" aria-label="Text input with dropdown button" />
+                                    <input type="text" id="startPrice"  class="form-control" placeholder="  مبلغ واریزی در مبدا" aria-label="Text input with dropdown button" />
+                                    <label class="floating-label en-font" for="startPrice"> (AUD)</label>
                                     <select class="form-control" name="countries" id="countries">
                                         <option value="AU">استرالیا</option>
                                         <option value="IR">ایران</option>
                                     </select>
                                 </div>
                                 <div class="input-group mt-3 mb-3">
-                                    <input type="text" class="form-control" placeholder="مبلغ دریافتی در مقصد (ریال)" aria-label="Text input with dropdown button" />
+                                    <input type="text" id="endPrice" class="form-control" placeholder="مبلغ دریافتی در مقصد (ریال)" aria-label="Text input with dropdown button" />
+                                    <label class="floating-label en-font" for="endPrice"> (IRR)</label>
                                     <select class="form-control" name="countries" id="countries">
                                         <option value="IR">ایران</option>
                                         <option value="AU">استرالیا</option>
