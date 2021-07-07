@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Icon_fast" width="140" height="120" viewBox="0 0 140 120">
+    <defs>
+        <filter id="Oval" width="76.834" height="77.713" x="31.02" y="29.352" filterUnits="userSpaceOnUse">
+            <feOffset dy="7"/>
+            <feGaussianBlur result="blur" stdDeviation="4"/>
+            <feFlood flood-color="#c99a65" flood-opacity=".259"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Ellipse_11" width="41.534" height="32.515" x="62.276" y="71.276" filterUnits="userSpaceOnUse">
+            <feOffset dy="7"/>
+            <feGaussianBlur result="blur-2" stdDeviation="4"/>
+            <feFlood flood-color="#c99a65" flood-opacity=".259"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y1=".576" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#d6a15f"/>
+            <stop offset="1" stop-color="#ad8b6f"/>
+        </linearGradient>
+        <style>
+            .cls-2{fill:none;stroke:#060606;stroke-linecap:round;stroke-width:2px;stroke-dasharray:70 10}.cls-7{fill:#fff}.cls-8{fill:#060606}
+        </style>
+    </defs>
+    <path id="Rectangle_480" fill="none" d="M0 0H140V120H0z"/>
+    <g id="Group-7" transform="translate(5.117 -2.63)">
+        <path id="Path-6" d="M81.013 106.63a46.5 46.5 0 0 0 25.556-60.225 45.7 45.7 0 0 0-59.353-25.524l-.463.188A46.5 46.5 0 0 0 21.2 81.293" class="cls-2"/>
+        <path id="Path-6-2" d="M89.07 89.241a37.185 37.185 0 0 0 0-52.333 36.575 36.575 0 0 0-51.693-.282l-.283.282a37.186 37.186 0 0 0 0 52.333" class="cls-2" transform="translate(.773 .765)"/>
+        <g id="Group-5" transform="translate(36.976 36.983)">
+            <g filter="url(#Oval)" transform="translate(-42.09 -34.35)">
+                <path id="Oval-2" fill="url(#linear-gradient)" d="M26.417 0a26.639 26.639 0 0 1 26.417 26.856 26.639 26.639 0 0 1-26.417 26.857A26.639 26.639 0 0 1 0 26.856 26.639 26.639 0 0 1 26.417 0z" transform="translate(43.02 34.35)"/>
+            </g>
+            <ellipse id="Oval-2-2" cx="26.88" cy="26.856" fill="none" stroke="#060606" stroke-width="2px" rx="26.88" ry="26.856"/>
+            <path id="Line" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2px" d="M59.151 52.358V62l11.123 10.732" transform="translate(-32.197 -33.836)"/>
+            <path id="Line-2" fill="none" stroke="#060606" stroke-linecap="round" stroke-width="2px" d="M59.151 52.358V62l11.123 10.732" transform="translate(-33.197 -33.836)"/>
+        </g>
+        <g id="Group-6-2" transform="translate(42.719 61.469)">
+            <ellipse id="Oval-4" cx="1.85" cy="1.94" class="cls-7" rx="1.85" ry="1.94" transform="translate(39.782)"/>
+            <ellipse id="Oval-Copy-2" cx="1.85" cy="1.94" class="cls-7" rx="1.85" ry="1.94"/>
+        </g>
+        <g id="Group-6" transform="translate(62.484 41.722)">
+            <ellipse id="Oval-3" cx="1.942" cy="1.849" class="cls-7" rx="1.942" ry="1.849"/>
+            <ellipse id="Oval-Copy" cx="1.942" cy="1.849" class="cls-7" rx="1.942" ry="1.849" transform="translate(0 39.747)"/>
+        </g>
+        <g id="Group-6-2-2" transform="translate(61.484 41.722)">
+            <ellipse id="Oval-3-2" cx="1.942" cy="1.849" class="cls-8" rx="1.942" ry="1.849"/>
+            <ellipse id="Oval-Copy-2-2" cx="1.942" cy="1.849" class="cls-8" rx="1.942" ry="1.849" transform="translate(0 39.747)"/>
+        </g>
+        <g id="Group-6-2-3" transform="translate(41.72 61.469)">
+            <ellipse id="Oval-4-2" cx="1.85" cy="1.94" class="cls-8" rx="1.85" ry="1.94" transform="translate(39.782)"/>
+            <ellipse id="Oval-Copy-2-3" cx="1.85" cy="1.94" class="cls-8" rx="1.85" ry="1.94"/>
+        </g>
+        <g id="Group_23265" transform="translate(-18.077 -283.51)">
+            <g id="Group_23073" transform="translate(87.736 362.916)">
+                <g id="Group_23072" filter="url(#Ellipse_11)" transform="translate(-74.78 -76.78)">
+                    <ellipse id="Ellipse_11-2" cx="8.267" cy="3.758" fill="url(#linear-gradient)" stroke="rgba(0,0,0,0)" rx="8.267" ry="3.758" transform="translate(74.78 76.78)"/>
+                </g>
+            </g>
+            <g id="Group_23074" transform="translate(87.736 370.186)">
+                <path id="Path_26038" d="M103.794 368.894c0 1.776-3.4 3.758-8.267 3.758s-8.267-1.981-8.267-3.758a1.816 1.816 0 0 1 .451-1.134 14.19 14.19 0 0 0 7.816 2.022 14.19 14.19 0 0 0 7.816-2.022 1.816 1.816 0 0 1 .451 1.134z" class="cls-7" transform="translate(-87.26 -367.76)"/>
+            </g>
+            <g id="Group_23075" transform="translate(85.96 361.14)">
+                <path id="Path_26039" d="M103.794 372.294c0 1.776-3.4 3.758-8.267 3.758s-8.267-1.981-8.267-3.758a1.816 1.816 0 0 1 .451-1.134 14.19 14.19 0 0 0 7.816 2.022 14.19 14.19 0 0 0 7.816-2.022 1.816 1.816 0 0 1 .451 1.134z" class="cls-7" transform="translate(-85.484 -357.468)"/>
+                <path id="Path_26040" fill="#0f131a" d="M105.145 369a3.6 3.6 0 0 0 .9-2.323c0-3.1-4.414-5.534-10.043-5.534s-10.043 2.432-10.043 5.534a3.6 3.6 0 0 0 .9 2.323 3.631 3.631 0 0 0-.9 2.323 3.569 3.569 0 0 0 .9 2.309 3.694 3.694 0 0 0-.9 2.337 3.576 3.576 0 0 0 .9 2.323 3.631 3.631 0 0 0-.9 2.323c0 3.115 4.414 5.534 10.043 5.534s10.043-2.419 10.043-5.534a3.631 3.631 0 0 0-.9-2.323 3.576 3.576 0 0 0 .9-2.323 3.694 3.694 0 0 0-.9-2.337 3.569 3.569 0 0 0 .9-2.309 3.631 3.631 0 0 0-.9-2.323zM96 384.369c-4.865 0-8.267-1.981-8.267-3.758a1.816 1.816 0 0 1 .451-1.134A14.19 14.19 0 0 0 96 381.5a14.19 14.19 0 0 0 7.816-2.022 1.816 1.816 0 0 1 .451 1.134c.003 1.776-3.399 3.757-8.267 3.757zm0-4.646c-4.865 0-8.267-1.981-8.267-3.758a1.816 1.816 0 0 1 .451-1.134A14.19 14.19 0 0 0 96 376.854a14.19 14.19 0 0 0 7.816-2.022 1.816 1.816 0 0 1 .451 1.134c.003 1.776-3.399 3.758-8.267 3.758zm0-4.646c-4.865 0-8.267-1.981-8.267-3.758a1.816 1.816 0 0 1 .451-1.134A14.19 14.19 0 0 0 96 372.208a14.19 14.19 0 0 0 7.816-2.022 1.816 1.816 0 0 1 .451 1.134c.003 1.78-3.399 3.758-8.267 3.758zm0-4.646c-4.865 0-8.267-1.981-8.267-3.758s3.4-3.758 8.267-3.758 8.267 1.981 8.267 3.758-3.399 3.759-8.267 3.759z" transform="translate(-85.96 -361.14)"/>
+            </g>
+            <g id="Group_23076" transform="translate(87.736 379.478)">
+                <path id="Path_26041" d="M103.794 375.694c0 1.776-3.4 3.758-8.267 3.758s-8.267-1.981-8.267-3.758a1.816 1.816 0 0 1 .451-1.134 14.19 14.19 0 0 0 7.816 2.022 14.19 14.19 0 0 0 7.816-2.022 1.816 1.816 0 0 1 .451 1.134z" class="cls-7" transform="translate(-87.26 -374.56)"/>
+            </g>
+        </g>
+    </g>
+</svg>

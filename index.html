@@ -1,0 +1,2235 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img//apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img//favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    صرافی ارز
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />-->
+    <link href="assets/css//font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="assets/demo/demo.css" rel="stylesheet" />    
+    <link rel="stylesheet" media="screen" href="assets/particle/css/style.css">
+    <link rel="stylesheet" href="assets/css/persian-date.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+</head>
+<body class="landing-page sidebar-collapse">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="300">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-start" id="navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item line-h-5">
+                        <select class="form-select form-select-sm lang-drop nav-link" aria-label=".form-select-sm example">
+                            <option selected>انتخاب زبان</option>
+                            <option value="1">فارسی</option>
+                            <option value="2">انگلیسی</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" target="_blank" class="nav-link btn btn-gold opacity-1 text-white"> ارسال حواله</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="#" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                            <p class="d-lg-none">Twitter</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="#" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                            <p class="d-lg-none">Facebook</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="#" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                            <p class="d-lg-none">Instagram</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="#" target="_blank">
+                            <i class="fa fa-github"></i>
+                            <p class="d-lg-none">GitHub</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="#" rel="tooltip" title="Coded by Whereismatin" data-placement="bottom" target="_blank">
+                    صرافی ارز
+                </a>
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="page-header" data-parallax="true" style="background-image: url('assets/img/Background@3x.jpg');">
+        <div id="particles-js"></div>
+        <div class="filter"></div>
+        <div class="container-fluid">
+            <div class="motto slider-container text-center">
+                <h1 class="display-4">ارسـال حــواله‌های ارزی، امــن، سریع و مطمئن</h1>
+                <h2>حواله دلار از اســترالیا به ایران : تماس بگیرید</h2>
+                <h2>حواله دلار از ایران به اســترالیا : تماس بگیرید</h2>
+                <br />
+                <a href="#" class="btn btn-outline-neutral  px-5">درباره ما</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="section landing-section">
+            <div class="container">
+                <h2 class="title title-after text-center">فرم درخواست خرید ارز</h2>
+                <p class="text-center">
+                    ارسـال حــواله‌های ارزی، امــن، سریع و مطمئن
+                </p>
+                <div class="col-md-8 m-auto">
+                    <div class="mt-5">
+                        <div class="tab" dir="rtl">
+                            <button class="tablinks active" onclick="changeTab(event, 'Calc')">محاسبه قیمت</button>
+                            <button class="tablinks" onclick="changeTab(event, 'Referred')">رهگیری حواله</button>
+                        </div>
+
+                        <div id="Calc" class="tabcontent display-block formtabs">
+                            <div class="input-group mt-3">
+                                <input type="text" class="form-control" placeholder="  (AUD) مبلغ واریزی در مبدا" aria-label="Text input with dropdown button" />
+                                <select class="form-control" name="countries" id="countries">
+                                    <option value="AU">استرالیا</option>
+                                    <option value="IR">ایران</option>
+                                </select>
+                            </div>
+                            <div class="input-group mt-3 mb-3">
+                                <input type="text" class="form-control" placeholder="مبلغ دریافتی در مقصد (ریال)" aria-label="Text input with dropdown button" />
+                                <select class="form-control" name="countries" id="countries">
+                                    <option value="IR">ایران</option>
+                                    <option value="AU">استرالیا</option>
+                                </select>
+                            </div>
+                            <div class="text-center mt-3 mb-3">
+                                <a href="#" class="btn btn-gold"> <i class="fa fa-arrow-left"></i> ثبت درخواست ارسال حواله</a>
+                            </div>
+                        </div>
+
+                        <div id="Referred" class="tabcontent">
+                            <div class="container mt-3">
+                                <input type="text" class="form-control text-right reffer-code" placeholder="کد رهگیری خود را وارد نمایید" aria-label="Text input with dropdown button" />
+                            </div>
+                            <div class="text-center mt-3 mb-3">
+                                <a href="#" class="btn btn-gold">مشاهده وضعیت</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-dark text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h2 class="title">خدمات صرافی ارز</h2>
+                        <h5 class="description subtitle">ویژگی‌های خدمات ارزی ارائه شده</h5>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon icon-danger">
+                                <img src="assets/img/Icon_fast.svg" />
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">انتقال در کمترین زمان</h4>
+                                <p class="mb-3">تجربه ۱۸ ساله ما در بازار تجارت بین‌المللی، با کادری مجرب و شعب متعدد در ایران و استرالیا رویای تبدیل و انتقال ارز مشتریان را در کمترین زمان، ممکن ساخته است</p>
+                                <a href="javascript:;" class="btn btn-gold py-1">ادامه مطلب</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon icon-danger">
+                                <img src="assets/img/Icon-BestPrice.svg" />
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">بهترین نرخ تبدیل</h4>
+                                <p class="mb-3">هدف ما ارائه بهترین خدمات ارزی با نازلترین قیمت ممکن و فراهم کردن شرایطی برای کمتر کردن هزینه‌های مشتریان عزیزمان و جلب رضایت بیشتر آن‌هاست</p>
+                                <a href="javascript:;" class="btn btn-gold py-1">ادامه مطلب</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon icon-danger">
+                                <img src="assets/img/Icon-Secure.svg" />
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">امن و مطمئن</h4>
+                                <p class="mb-3">خدمات ارزی ارائه شده توسط ما دارای مجوزهای قانونی در کشور استرالیا و ایران است و متعد به قوانین بین المللی پولشویی می‌باشد. امنیت پول شما امنیت ماست</p>
+                                <a href="javascript:;" class="btn btn-gold py-1">ادامه مطلب</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon icon-danger">
+                                <img src="assets/img/Icon-StepByStep.svg" />
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">پیگیری مرحله به مرحله</h4>
+                                <p class="mb-3">اولین اصل موفقیت ، پاسخگویی سریع به مشتری است. اگر در پرداخت های ارزی نیاز به مشاوره دارید، با ما در تماس باشید. تلاش ما جلب رضایت شماست.</p>
+                                <a href="javascript:;" class="btn btn-gold py-1">ادامه مطلب</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-dark text-center">
+            <div class="container">
+                <h2 class="title title-after">نمودار ارز</h2>
+                <div dir="rtl" class="mt-5">
+                    <i class="fa fa-calendar text-white ml-2"></i> <span class="text-white ml-2">
+                        از
+                    </span>
+                    <input type="text" class="date1 text-right ml-5" placeholder="از تاریخ " />
+                    <i class="fa fa-calendar text-white ml-2"></i><span class="text-white ml-2">
+                        تا
+                    </span>
+                    <input type="text" class="date1 text-right" placeholder="تا تاریخ " />
+                </div>
+                <div class="container mt-5">
+                    <ul class="nav nav-tabs justify-content-start tabs-price flex-reverse">
+                        <li class="active"><a class="btn active" data-toggle="tab" href="#menu1">خرید از ما</a></li>
+                        <li><a class="btn " data-toggle="tab" href="#menu2">فروش به ما</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="menu1" class="tab-pane fade in active show">
+                            <table class="table table-hover price-table" dir="rtl">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">نام ارز</th>
+                                        <th scope="col">قیمت (تومان)</th>
+                                        <th scope="col">قیمت دلاری</th>
+                                        <th scope="col">1 ساعت</th>
+                                        <th scope="col">24 ساعت</th>
+                                        <th scope="col">7 روز</th>
+                                        <th scope="col">مورد علاقه</th>
+                                        <th scope="col">کیف پول</th>
+                                        <th scope="col"> </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <img class="ml-2" width="25" height="25" src="assets/img/crypto/currencies-37-bitcoin.png" />
+                                                <div>
+                                                    <p class="mb-1">بیت کوین</p>
+                                                    <span class="font-12">BTC</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            ۸۸۶,۸۵۵,۰۰۰
+                                        </td>
+                                        <td>﹩۳۴,۷۸۶.۲</td>
+                                        <td class="text-success">
+                                            ۰.۷۱%<i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۰.۱۶%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td class="">
+                                            ۰%
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price"><i class="fa fa-star"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price">
+                                                <?xml version="1.0" encoding="iso-8859-1" ?>
+                                                <svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+                                                <g>
+                                                <path d="M361.739,278.261c-27.664,0-50.087,22.423-50.087,50.087s22.423,50.087,50.087,50.087H512V278.261H361.739z
+			 M361.739,345.043c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696s16.696,7.475,16.696,16.696
+			S370.96,345.043,361.739,345.043z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M361.739,244.87h83.478v-50.087c0-27.619-22.468-50.087-50.087-50.087H16.696C7.479,144.696,0,152.174,0,161.391v333.913
+			C0,504.521,7.479,512,16.696,512H395.13c27.619,0,50.087-22.468,50.087-50.087v-50.087h-83.478
+			c-46.032,0-83.478-37.446-83.478-83.478C278.261,282.316,315.707,244.87,361.739,244.87z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M461.913,144.696h-0.158c10.529,13.973,16.854,31.282,16.854,50.087v50.087H512v-50.087
+			C512,167.164,489.532,144.696,461.913,144.696z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M478.609,411.826v50.087c0,18.805-6.323,36.114-16.854,50.087h0.158C489.532,512,512,489.532,512,461.913v-50.087H478.609
+			z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M273.369,4.892c-6.521-6.521-17.087-6.521-23.609,0l-14.674,14.674l91.74,91.738h52.956L273.369,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M173.195,4.892c-6.521-6.522-17.086-6.522-23.608,0L43.174,111.304h236.435L173.195,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-gold p-2 font-14">ثبت سفارش</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <img class="ml-2" width="25" height="25" src="assets/img/crypto/currencies-12-ethereum.png" />
+                                                <div>
+                                                    <p class="mb-1">اتریوم</p>
+                                                    <span class="font-12">ETH</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            ۶۱,۰۲۱,۸۰۰
+                                        </td>
+                                        <td>
+                                            ﹩۲,۳۸۱.۱۱
+                                        </td>
+                                        <td class="text-danger">
+                                            ۰.۳۷%
+                                            <i class="fa fa-arrow-down font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۲.۸%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۱۲.۶۳%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price"><i class="fa fa-star"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price">
+                                                <?xml version="1.0" encoding="iso-8859-1" ?>
+                                                <svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+                                                <g>
+                                                <path d="M361.739,278.261c-27.664,0-50.087,22.423-50.087,50.087s22.423,50.087,50.087,50.087H512V278.261H361.739z
+			 M361.739,345.043c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696s16.696,7.475,16.696,16.696
+			S370.96,345.043,361.739,345.043z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M361.739,244.87h83.478v-50.087c0-27.619-22.468-50.087-50.087-50.087H16.696C7.479,144.696,0,152.174,0,161.391v333.913
+			C0,504.521,7.479,512,16.696,512H395.13c27.619,0,50.087-22.468,50.087-50.087v-50.087h-83.478
+			c-46.032,0-83.478-37.446-83.478-83.478C278.261,282.316,315.707,244.87,361.739,244.87z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M461.913,144.696h-0.158c10.529,13.973,16.854,31.282,16.854,50.087v50.087H512v-50.087
+			C512,167.164,489.532,144.696,461.913,144.696z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M478.609,411.826v50.087c0,18.805-6.323,36.114-16.854,50.087h0.158C489.532,512,512,489.532,512,461.913v-50.087H478.609
+			z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M273.369,4.892c-6.521-6.521-17.087-6.521-23.609,0l-14.674,14.674l91.74,91.738h52.956L273.369,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M173.195,4.892c-6.521-6.522-17.086-6.522-23.608,0L43.174,111.304h236.435L173.195,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-gold p-2 font-14">ثبت سفارش</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <img class="ml-2" width="25" height="25" src="assets/img/crypto/currencies-1-xrp.png" />
+                                                <div>
+                                                    <p class="mb-1">ریپل</p>
+                                                    <span class="font-12">XRP</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            ۱۷,۳۱۲
+                                        </td>
+                                        <td>
+                                            ﹩۰.۶۷
+                                        </td>
+                                        <td class="text-success">
+                                            ۰.۴۹%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td class="text-danger">
+                                            ۰.۳۲%
+                                            <i class="fa fa-arrow-down font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۰.۸۵%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price"><i class="fa fa-star"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price">
+                                                <?xml version="1.0" encoding="iso-8859-1" ?>
+                                                <svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+                                                <g>
+                                                <path d="M361.739,278.261c-27.664,0-50.087,22.423-50.087,50.087s22.423,50.087,50.087,50.087H512V278.261H361.739z
+			 M361.739,345.043c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696s16.696,7.475,16.696,16.696
+			S370.96,345.043,361.739,345.043z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M361.739,244.87h83.478v-50.087c0-27.619-22.468-50.087-50.087-50.087H16.696C7.479,144.696,0,152.174,0,161.391v333.913
+			C0,504.521,7.479,512,16.696,512H395.13c27.619,0,50.087-22.468,50.087-50.087v-50.087h-83.478
+			c-46.032,0-83.478-37.446-83.478-83.478C278.261,282.316,315.707,244.87,361.739,244.87z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M461.913,144.696h-0.158c10.529,13.973,16.854,31.282,16.854,50.087v50.087H512v-50.087
+			C512,167.164,489.532,144.696,461.913,144.696z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M478.609,411.826v50.087c0,18.805-6.323,36.114-16.854,50.087h0.158C489.532,512,512,489.532,512,461.913v-50.087H478.609
+			z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M273.369,4.892c-6.521-6.521-17.087-6.521-23.609,0l-14.674,14.674l91.74,91.738h52.956L273.369,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M173.195,4.892c-6.521-6.522-17.086-6.522-23.608,0L43.174,111.304h236.435L173.195,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-gold p-2 font-14">ثبت سفارش</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center justify-content-start">
+                                                <img class="ml-2" width="25" height="25" src="assets/img/crypto/currencies-2-tron.png" />
+                                                <div>
+                                                    <p class="mb-1">ترون</p>
+                                                    <span class="font-12">TRX</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            ۱,۶۹۴
+                                        </td>
+                                        <td>
+                                            ﹩۰.۰۷
+                                        </td>
+                                        <td class="text-danger">
+                                            ۰.۱۷%
+                                            <i class="fa fa-arrow-down font-12"></i>
+                                        </td>
+                                        <td class="text-danger">
+                                            ۰.۹۸%
+                                            <i class="fa fa-arrow-down font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۰.۵۵%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price"><i class="fa fa-star"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price">
+                                                <?xml version="1.0" encoding="iso-8859-1" ?>
+                                                <svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+                                                <g>
+                                                <path d="M361.739,278.261c-27.664,0-50.087,22.423-50.087,50.087s22.423,50.087,50.087,50.087H512V278.261H361.739z
+			 M361.739,345.043c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696s16.696,7.475,16.696,16.696
+			S370.96,345.043,361.739,345.043z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M361.739,244.87h83.478v-50.087c0-27.619-22.468-50.087-50.087-50.087H16.696C7.479,144.696,0,152.174,0,161.391v333.913
+			C0,504.521,7.479,512,16.696,512H395.13c27.619,0,50.087-22.468,50.087-50.087v-50.087h-83.478
+			c-46.032,0-83.478-37.446-83.478-83.478C278.261,282.316,315.707,244.87,361.739,244.87z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M461.913,144.696h-0.158c10.529,13.973,16.854,31.282,16.854,50.087v50.087H512v-50.087
+			C512,167.164,489.532,144.696,461.913,144.696z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M478.609,411.826v50.087c0,18.805-6.323,36.114-16.854,50.087h0.158C489.532,512,512,489.532,512,461.913v-50.087H478.609
+			z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M273.369,4.892c-6.521-6.521-17.087-6.521-23.609,0l-14.674,14.674l91.74,91.738h52.956L273.369,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M173.195,4.892c-6.521-6.522-17.086-6.522-23.608,0L43.174,111.304h236.435L173.195,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-gold p-2 font-14">ثبت سفارش</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                            <table class="table table-hover price-table" dir="rtl">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">نام ارز</th>
+                                        <th scope="col">قیمت (تومان)</th>
+                                        <th scope="col">قیمت دلاری</th>
+                                        <th scope="col">1 ساعت</th>
+                                        <th scope="col">24 ساعت</th>
+                                        <th scope="col">7 روز</th>
+                                        <th scope="col">مورد علاقه</th>
+                                        <th scope="col">کیف پول</th>
+                                        <th scope="col"> </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <img class="ml-2" width="25" height="25" src="assets/img/crypto/currencies-37-bitcoin.png" />
+                                                <div>
+                                                    <p class="mb-1">بیت کوین</p>
+                                                    <span class="font-12">BTC</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            ۸۸۶,۸۵۵,۰۰۰
+                                        </td>
+                                        <td>﹩۳۴,۷۸۶.۲</td>
+                                        <td class="text-success">
+                                            ۰.۷۱%<i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۰.۱۶%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td class="">
+                                            ۰%
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price"><i class="fa fa-star"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price">
+                                                <?xml version="1.0" encoding="iso-8859-1" ?>
+                                                <svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+                                                <g>
+                                                <path d="M361.739,278.261c-27.664,0-50.087,22.423-50.087,50.087s22.423,50.087,50.087,50.087H512V278.261H361.739z
+			 M361.739,345.043c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696s16.696,7.475,16.696,16.696
+			S370.96,345.043,361.739,345.043z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M361.739,244.87h83.478v-50.087c0-27.619-22.468-50.087-50.087-50.087H16.696C7.479,144.696,0,152.174,0,161.391v333.913
+			C0,504.521,7.479,512,16.696,512H395.13c27.619,0,50.087-22.468,50.087-50.087v-50.087h-83.478
+			c-46.032,0-83.478-37.446-83.478-83.478C278.261,282.316,315.707,244.87,361.739,244.87z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M461.913,144.696h-0.158c10.529,13.973,16.854,31.282,16.854,50.087v50.087H512v-50.087
+			C512,167.164,489.532,144.696,461.913,144.696z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M478.609,411.826v50.087c0,18.805-6.323,36.114-16.854,50.087h0.158C489.532,512,512,489.532,512,461.913v-50.087H478.609
+			z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M273.369,4.892c-6.521-6.521-17.087-6.521-23.609,0l-14.674,14.674l91.74,91.738h52.956L273.369,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M173.195,4.892c-6.521-6.522-17.086-6.522-23.608,0L43.174,111.304h236.435L173.195,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-gold p-2 font-14">ثبت سفارش</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <img class="ml-2" width="25" height="25" src="assets/img/crypto/currencies-12-ethereum.png" />
+                                                <div>
+                                                    <p class="mb-1">اتریوم</p>
+                                                    <span class="font-12">ETH</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            ۶۱,۰۲۱,۸۰۰
+                                        </td>
+                                        <td>
+                                            ﹩۲,۳۸۱.۱۱
+                                        </td>
+                                        <td class="text-danger">
+                                            ۰.۳۷%
+                                            <i class="fa fa-arrow-down font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۲.۸%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۱۲.۶۳%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price"><i class="fa fa-star"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price">
+                                                <?xml version="1.0" encoding="iso-8859-1" ?>
+                                                <svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+                                                <g>
+                                                <path d="M361.739,278.261c-27.664,0-50.087,22.423-50.087,50.087s22.423,50.087,50.087,50.087H512V278.261H361.739z
+			 M361.739,345.043c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696s16.696,7.475,16.696,16.696
+			S370.96,345.043,361.739,345.043z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M361.739,244.87h83.478v-50.087c0-27.619-22.468-50.087-50.087-50.087H16.696C7.479,144.696,0,152.174,0,161.391v333.913
+			C0,504.521,7.479,512,16.696,512H395.13c27.619,0,50.087-22.468,50.087-50.087v-50.087h-83.478
+			c-46.032,0-83.478-37.446-83.478-83.478C278.261,282.316,315.707,244.87,361.739,244.87z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M461.913,144.696h-0.158c10.529,13.973,16.854,31.282,16.854,50.087v50.087H512v-50.087
+			C512,167.164,489.532,144.696,461.913,144.696z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M478.609,411.826v50.087c0,18.805-6.323,36.114-16.854,50.087h0.158C489.532,512,512,489.532,512,461.913v-50.087H478.609
+			z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M273.369,4.892c-6.521-6.521-17.087-6.521-23.609,0l-14.674,14.674l91.74,91.738h52.956L273.369,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M173.195,4.892c-6.521-6.522-17.086-6.522-23.608,0L43.174,111.304h236.435L173.195,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-gold p-2 font-14">ثبت سفارش</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <img class="ml-2" width="25" height="25" src="assets/img/crypto/currencies-1-xrp.png" />
+                                                <div>
+                                                    <p class="mb-1">ریپل</p>
+                                                    <span class="font-12">XRP</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            ۱۷,۳۱۲
+                                        </td>
+                                        <td>
+                                            ﹩۰.۶۷
+                                        </td>
+                                        <td class="text-success">
+                                            ۰.۴۹%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td class="text-danger">
+                                            ۰.۳۲%
+                                            <i class="fa fa-arrow-down font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۰.۸۵%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price"><i class="fa fa-star"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price">
+                                                <?xml version="1.0" encoding="iso-8859-1" ?>
+                                                <svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+                                                <g>
+                                                <path d="M361.739,278.261c-27.664,0-50.087,22.423-50.087,50.087s22.423,50.087,50.087,50.087H512V278.261H361.739z
+			 M361.739,345.043c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696s16.696,7.475,16.696,16.696
+			S370.96,345.043,361.739,345.043z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M361.739,244.87h83.478v-50.087c0-27.619-22.468-50.087-50.087-50.087H16.696C7.479,144.696,0,152.174,0,161.391v333.913
+			C0,504.521,7.479,512,16.696,512H395.13c27.619,0,50.087-22.468,50.087-50.087v-50.087h-83.478
+			c-46.032,0-83.478-37.446-83.478-83.478C278.261,282.316,315.707,244.87,361.739,244.87z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M461.913,144.696h-0.158c10.529,13.973,16.854,31.282,16.854,50.087v50.087H512v-50.087
+			C512,167.164,489.532,144.696,461.913,144.696z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M478.609,411.826v50.087c0,18.805-6.323,36.114-16.854,50.087h0.158C489.532,512,512,489.532,512,461.913v-50.087H478.609
+			z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M273.369,4.892c-6.521-6.521-17.087-6.521-23.609,0l-14.674,14.674l91.74,91.738h52.956L273.369,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M173.195,4.892c-6.521-6.522-17.086-6.522-23.608,0L43.174,111.304h236.435L173.195,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-gold p-2 font-14">ثبت سفارش</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <img class="ml-2" width="25" height="25" src="assets/img/crypto/currencies-2-tron.png" />
+                                                <div>
+                                                    <p class="mb-1">ترون</p>
+                                                    <span class="font-12">TRX</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            ۱,۶۹۴
+                                        </td>
+                                        <td>
+                                            ﹩۰.۰۷
+                                        </td>
+                                        <td class="text-danger">
+                                            ۰.۱۷%
+                                            <i class="fa fa-arrow-down font-12"></i>
+                                        </td>
+                                        <td class="text-danger">
+                                            ۰.۹۸%
+                                            <i class="fa fa-arrow-down font-12"></i>
+                                        </td>
+                                        <td class="text-success">
+                                            ۰.۵۵%
+                                            <i class="fa fa-arrow-up font-12"></i>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price"><i class="fa fa-star"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="btn p-2 fav-price">
+                                                <?xml version="1.0" encoding="iso-8859-1" ?>
+                                                <svg fill="#fff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+                                                <g>
+                                                <path d="M361.739,278.261c-27.664,0-50.087,22.423-50.087,50.087s22.423,50.087,50.087,50.087H512V278.261H361.739z
+			 M361.739,345.043c-9.22,0-16.696-7.475-16.696-16.696s7.475-16.696,16.696-16.696s16.696,7.475,16.696,16.696
+			S370.96,345.043,361.739,345.043z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M361.739,244.87h83.478v-50.087c0-27.619-22.468-50.087-50.087-50.087H16.696C7.479,144.696,0,152.174,0,161.391v333.913
+			C0,504.521,7.479,512,16.696,512H395.13c27.619,0,50.087-22.468,50.087-50.087v-50.087h-83.478
+			c-46.032,0-83.478-37.446-83.478-83.478C278.261,282.316,315.707,244.87,361.739,244.87z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M461.913,144.696h-0.158c10.529,13.973,16.854,31.282,16.854,50.087v50.087H512v-50.087
+			C512,167.164,489.532,144.696,461.913,144.696z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M478.609,411.826v50.087c0,18.805-6.323,36.114-16.854,50.087h0.158C489.532,512,512,489.532,512,461.913v-50.087H478.609
+			z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M273.369,4.892c-6.521-6.521-17.087-6.521-23.609,0l-14.674,14.674l91.74,91.738h52.956L273.369,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+                                                <g>
+                                                <path d="M173.195,4.892c-6.521-6.522-17.086-6.522-23.608,0L43.174,111.304h236.435L173.195,4.892z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-gold p-2 font-14">ثبت سفارش</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row">
+              <div class="col-md-4">
+                <div class="card card-profile card-plain">
+                  <div class="card-avatar">
+                    <a href="#avatar">
+                      <img src="assets/img/faces/clem-onojeghuo-3.jpg" alt="...">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="#paper-kit">
+                      <div class="author">
+                        <h4 class="card-title">Henry Ford</h4>
+                        <h6 class="card-category">Product Manager</h6>
+                      </div>
+                    </a>
+                    <p class="card-description text-center">
+                      Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.
+                    </p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-profile card-plain">
+                  <div class="card-avatar">
+                    <a href="#avatar">
+                      <img src="assets/img/faces/joe-gardner-2.jpg" alt="...">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="#paper-kit">
+                      <div class="author">
+                        <h4 class="card-title">Sophie West</h4>
+                        <h6 class="card-category">Designer</h6>
+                      </div>
+                    </a>
+                    <p class="card-description text-center">
+                      A group becomes a team when each member is sure enough of himself and his contribution to praise the skill of the others. No one can whistle a symphony. It takes an orchestra to play it.
+                    </p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-profile card-plain">
+                  <div class="card-avatar">
+                    <a href="#avatar">
+                      <img src="assets/img/faces/erik-lucatero-2.jpg" alt="...">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="#paper-kit">
+                      <div class="author">
+                        <h4 class="card-title">Robert Orben</h4>
+                        <h6 class="card-category">Developer</h6>
+                      </div>
+                    </a>
+                    <p class="card-description text-center">
+                      The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
+                    </p>
+                  </div>
+                  <div class="card-footer text-center">
+                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+            </div>
+        </div>
+        <div class="section landing-section">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 ml-auto mr-auto">
+                        <h1 class="text-center title">مراحل ثبت درخواست ارسال حواله آنلاین</h1>
+                        <p class="text-center">
+                            پیش از ثبت ارسال حواله‌‌ی ارزی، مدارک شناسایی شما باید در سایت بارگذاری شود تا احراز هویت شما انجام شود. پس از اطلاع از اخرین نرخ حواله و واریز وجه، با ورود به پروفایل خود، مدارک خود را تکمیل نموده‌ و رسید واریزی را آپلود نمایید و درخواست خود را پیگیری کنید
+                        </p>
+                        <div class="container mt-5" dir="rtl">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="step">
+                                        <div class="content">
+                                            <div class="number ml-3">
+                                                <img src="assets/img/num/Item-1.svg" />
+                                            </div>
+                                            <div class="content-inner p-4">
+                                                <div class="step-title">افتتاح حساب کاربری در سایت</div>
+                                                <div class="step-description">جهت ارسال حواله‌‌ی درخواستی، ابتدا در وب‌سایت ما <a href="/Account/Register">ثـبت‌نام</a> کنید. درصورتیکه قبلا در وب‌سایت ما عضو شده‌اید از بخش <a href="/Account/Login">ورود‌</a> وارد پروفایل خود شوید.</div>
+                                            </div>
+                                        </div>
+                                        <div class="icon-step">
+                                            <img width="100" src="assets/img/step/Illustration-OpenAccount.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="step">
+                                        <div class="content">
+                                            <div class="icon-step">
+                                                <img width="100" src="assets/img/step/Illustration-UploadDoc.svg" />
+                                            </div>
+
+                                            <div class="content-inner p-4">
+                                                <div class="step-title">تکمیل اطلاعات  </div>
+                                                <div class="step-description">جهت  مدارک شناسایی مورد نیاز برای کاربران ایرانی در استرالیا، گواهی رانندگی ایالتی، گذرنامه به همراه کارت مدیکر و مشتریانی که داخل ایران هستند کارت ملی است</div>
+                                            </div>
+                                        </div>
+                                        <div class="number ml-3">
+                                            <img src="assets/img/num/Item-2.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="step">
+                                        <div class="content">
+                                            <div class="number">
+                                                <img src="assets/img/num/Item-3.svg" />
+                                            </div>
+                                            <div class="content-inner p-4">
+                                                <div class="step-title">واریز مبلغ انتقال </div>
+                                                <div class="step-description"> به دلیل نوسانات بازار ارز، پیش از واریز مبلغ ، جهت نهایی سازی مبلغ پرداختی، با صرافی ارز هماهنگ نموده ، سپس مبلغ را پرداخت و رسید آن را در وب‌سایت بارگذاری نمایید</div>
+                                            </div>
+                                        </div>
+                                        <div class="icon-step">
+                                            <img width="100" src="assets/img/step/Illustration-PayMoney.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="step">
+                                        <div class="content">
+                                            <div class="icon-step">
+                                                <img width="100" src="assets/img/step/Illustration-TrackMoney.svg" />
+                                            </div>
+
+                                            <div class="content-inner p-4">
+                                                <div class="step-title">پیگیری لحظه به لحظه </div>
+                                                <div class="step-description">پس از تکمیل مدارک و واریز مبلغ و بارگذاری آن در وب‌سایت درخواست شما با موفقیت ثبت می‌گردد و کد رهگیری دریافت میکنید. وضعیت حواله خود را آنلاین میتوانید بررسی نمایید</div>
+                                            </div>
+                                        </div>
+                                        <div class="number ml-3">
+                                            <img src="assets/img/num/Item-4.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="step">
+                                        <div class="content">
+                                            <div class="number ml-3">
+                                                <img src="assets/img/num/Item-5.svg" />
+                                            </div>
+                                            <div class="content-inner p-4">
+                                                <div class="step-title">دریافت وجه حواله در مقصد </div>
+                                                <div class="step-description">حواله ارسالی شما در کمترین زمان ممکن، به مقصد خواهد رسید</div>
+                                            </div>
+                                        </div>
+                                        <div class="icon-step">
+                                            <img width="100" src="assets/img/step/Illustration-ReceiveMoney.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="#" class="btn btn-gold">ثبت درخواست ارسال حواله <i class="fa fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-dark">
+            <div class="container">
+                <h2 class="title title-after text-center">تجربیات مشتریان ما</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="testimonial-bg">
+                            <div id="testimonial-slider" class="owl-carousel">
+                                <div class="testimonial">
+                                    <p class="description">
+                                        ”قابل اطمینان با قابلیت سرویس دهی بالا، مبادله عادلانه و نزدیک به قیمت واقعی بازار.“
+                                    </p>
+                                    <div class="pic">
+                                        <img src="assets/img/testi/avatar-1.jpg" alt="" />
+                                    </div>
+                                    <h3 class="title">محمد عباسی</h3>
+                                </div>
+
+                                <div class="testimonial">
+                                    <p class="description">
+                                        ”دقت و سرعت عمل، کیفیت در خدمات دهی، و ارائه منصفانه ترین نرخ برای انتقال ارز“
+                                    </p>
+                                    <div class="pic">
+                                        <img src="assets/img/testi/avatar.jpg" alt="" />
+                                    </div>
+                                    <h3 class="title">سارا پناهی</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section">
+        <div class="container">
+            <h2 class="title title-after text-center">آخرین اخبار</h2>
+            <div class="row">
+          <div class="col-md-4">
+            <div class="card card-profile card-plain" dir="rtl">
+              <div class="card-avatar">
+                <a href="#avatar">
+                  <img src="assets/img/news/download.png" alt="...">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#paper-kit">
+                  <div class="author">
+                      <h4 class="card-title">تهدیدی دیگر برای کاهش نیروی کار متخصص در استرالیا</h4>
+                  </div>
+                </a>
+                <p class="card-description text-center font-14" dir="rtl">
+                    درحالیکه مراکز تجاری همچون لندن و نیویورک در حال بازگشایی و بازگشت به زندگی معمولی هستند مرزهای کشور استرالیا همچنان بسته است و این تهدیدی برای کاهش نیروی کار متخصص در استرالیا خواهد بود.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="text-black readmore">خواندن مطلب<i class="fa fa-chevron-left mr-1 font-12"></i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-profile card-plain">
+              <div class="card-avatar">
+                <a href="#avatar">
+                  <img src="assets/img/news/download (1).png" alt="...">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#paper-kit">
+                  <div class="author">
+                      <h4 class="card-title">قرنطینه کلانشهر سیدنی تا روز ۱۶ جولای تمدید شد</h4>
+                  </div>
+                </a>
+                <p class="card-description text-center font-14" dir="rtl">
+                    بنا به گفته رسانه ABC قرنطینه کلانشهر سیدنی یک‌ هفته دیگر تمدید خواهد شد. رهبر این ایالت نیز دقایقی پیش تمدید قرنطینه کلانشهر سیدنی تا روز ۱۶ جولای را تایید کرد.
+
+                    ایالت نیو‌ساوت ولز در ۲۴ ساعت گذشته ۲۷ مورد ....
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                  <a href="#" class="text-black readmore">خواندن مطلب<i class="fa fa-chevron-left mr-1 font-12"></i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-profile card-plain">
+              <div class="card-avatar">
+                <a href="#avatar">
+                  <img src="assets/img/news/download (2).png" alt="...">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#paper-kit">
+                  <div class="author">
+                      <h4 class="card-title">آخرین وضعیت کرونا در استرالیا </h4>
+                  </div>
+                </a>
+                <p class="card-description text-center font-14" dir="rtl">
+                    نیو‌ ساوت ولز در ۲۴ ساعت گذشته ۱۸ مورد انتقال درون اجتماعی به ویروس کرونا ثبت کرده است. گلدیس برجکلیان، رهبر ایالت نیو ساوت ولز، فردا در خصوص اتمام قرنطینه کلانشهر سیدنی یا تمدید آن تصمیم گیری خواهد کرد. در حالیکه اتمام قرنطینه کلانشهر سیدنی....
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                  <a href="#" class="text-black readmore">خواندن مطلب<i class="fa fa-chevron-left mr-1 font-12"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-dark ">
+        <div class="container">
+            <div class="row">
+                <nav class="footer-nav">
+                    <ul>
+                        <li>
+                            <a class="text-white" href="#" target="_blank">سوالات متداول</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#" target="_blank">شرایط و مقررات</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#" target="_blank">خبرنامه</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="credits ml-auto">
+                    <span class="copyright">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> صرافی ارز
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script src="assets/js/plugins/moment.min.js"></script>
+    <script src="assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+    <script src="assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/lib/stats.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        function changeTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
+    <script src="assets/js/persian-date.min.js"></script>
+    <script src="assets/js/persian-date-picker.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".date1").pDatepicker({
+                observer: true,
+                format: 'YYYY/MM/DD',
+                altField: '.observer-example-alt',
+                initialValue: false
+            });
+
+            if ($(window).width() < 514) {
+                $('.price-table').addClass('table-responsive');
+            } else {
+                $('.price-table').removeClass('table-responsive');
+            }
+        });
+    </script>
+</body>
+</html>
