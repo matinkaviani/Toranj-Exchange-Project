@@ -3604,21 +3604,21 @@ License - nucleoapp.com/license/
 
 @font-face {
     font-family: 'nucleo-icons';
-    src: url("/Currency-project/assets/fonts/nucleo-icons.eot");
-    src: url("/Currency-project/assets/fonts/nucleo-icons.eot") format("embedded-opentype"), url("/Currency-project/assets/fonts/nucleo-icons.woff2") format("woff2"), url("/Currency-project/assets/fonts/nucleo-icons.woff") format("woff"), url("/Currency-project/assets/fonts/nucleo-icons.ttf") format("truetype"), url("/Currency-project/assets/fonts/nucleo-icons.svg") format("svg");
+    src: url("/Currency-Project/assets/fonts/nucleo-icons.eot");
+    src: url("/Currency-Project/assets/fonts/nucleo-icons.eot") format("embedded-opentype"), url("/Currency-Project/assets/fonts/nucleo-icons.woff2") format("woff2"), url("/Currency-Project/assets/fonts/nucleo-icons.woff") format("woff"), url("/Currency-Project/assets/fonts/nucleo-icons.ttf") format("truetype"), url("/Currency-Project/assets/fonts/nucleo-icons.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Yekan';
-    src: url('/Currency-project/assets/fonts/Yekan.ttf');
+    src: url('/Currency-Project/assets/fonts/Yekan.ttf');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Yekan-bakh';
-    src: url('/Currency-project/assets/fonts/Yekan Regular Bakh.ttf');
+    src: url('/Currency-Project/assets/fonts/Yekan Bakh Regular.ttf');
 }
 
 @font-face {
