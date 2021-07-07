@@ -8854,7 +8854,9 @@ select:focus, button:focus {
 .display-block {
     display: block;
 }
-
+.formtabs {
+    background-color: #f1f1f1;
+}
 .formtabs select {
     direction: rtl;
     border-color: #dddddd;
