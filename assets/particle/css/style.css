@@ -6,9 +6,11 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    font-family: Yekan;
 }
 
 body {
+    font-family: Yekan;
     line-height: 1;
 }
 
@@ -94,7 +96,7 @@ html {
 }
 
 body {
-    font-family: 'Yekan-bakh';
+    font-family: Yekan;
 }
 
 canvas {
@@ -114,7 +116,7 @@ canvas {
     text-indent: 4px;
     line-height: 14px;
     padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Yekan;
     font-weight: bold;
 }
 

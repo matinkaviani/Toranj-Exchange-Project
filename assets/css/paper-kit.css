@@ -2427,6 +2427,7 @@
 .input-group > .custom-select:not(:last-child),
 .input-group > .form-control:not(:last-child) {
     border-right: none;
+    font-family: Yekan;
 }
 
 .input-group-text {
@@ -3179,7 +3180,7 @@ h3 .small {
 .footer-big h5,
 .footer-big h4,
 .media .media-heading {
-    font-family: 'Yekan-bakh';
+    font-family: Yekan;
 }
 
     .title,
@@ -3315,17 +3316,19 @@ body {
     color: #66615b;
     font-size: 14px;
     font-weight: 300;
-    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+    font-family: Yekan;
 }
 
 a {
     color: #51bcda;
+    font-family: Yekan;
 }
 
     a:hover,
     a:focus {
         color: #2ba9cd;
         text-decoration: none;
+        font-family: Yekan;
     }
 
 hr {
@@ -3604,21 +3607,21 @@ License - nucleoapp.com/license/
 
 @font-face {
     font-family: 'nucleo-icons';
-    src: url("/Currency-Project/assets/fonts/nucleo-icons.eot");
-    src: url("/Currency-Project/assets/fonts/nucleo-icons.eot") format("embedded-opentype"), url("/Currency-Project/assets/fonts/nucleo-icons.woff2") format("woff2"), url("/Currency-Project/assets/fonts/nucleo-icons.woff") format("woff"), url("/Currency-Project/assets/fonts/nucleo-icons.ttf") format("truetype"), url("/Currency-Project/assets/fonts/nucleo-icons.svg") format("svg");
+    src: url("/assets/fonts/nucleo-icons.eot");
+    src: url("/assets/fonts/nucleo-icons.eot") format("embedded-opentype"), url("/assets/fonts/nucleo-icons.woff2") format("woff2"), url("/assets/fonts/nucleo-icons.woff") format("woff"), url("/assets/fonts/nucleo-icons.ttf") format("truetype"), url("/assets/fonts/nucleo-icons.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Yekan';
-    src: url('/Currency-Project/assets/fonts/Yekan.ttf');
+    src: url('/assets/fonts/Yekan.ttf');
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Yekan-bakh';
-    src: url('/Currency-Project/assets/fonts/Yekan Bakh Regular.ttf');
+    font-family: Yekan;
+    src: url('/assets/fonts/Yekan Bakh Regular.ttf');
 }
 
 @font-face {
@@ -4523,6 +4526,7 @@ License - nucleoapp.com/license/
         padding: 20px 15px;
         font-size: 25px;
         color: #66615B;
+        font-family: Yekan;
         text-transform: uppercase;
     }
 
@@ -4547,6 +4551,7 @@ License - nucleoapp.com/license/
         text-transform: uppercase;
         font-weight: 600;
         color: #66615B;
+        font-family: Yekan;
     }
 
         .navbar .navbar-nav .nav-item .nav-link p {
@@ -4640,6 +4645,7 @@ License - nucleoapp.com/license/
 
         .navbar.navbar-transparent .navbar-brand {
             color: #FFFFFF;
+            font-family: Yekan;
         }
 
         .navbar.navbar-transparent .navbar-nav .nav-item .nav-link {
@@ -4713,6 +4719,7 @@ License - nucleoapp.com/license/
 [class*="bg"] .navbar-nav .nav-item .nav-link:not(.btn) {
     color: #FFFFFF;
     border-color: #FFFFFF;
+    font-family: Yekan;
 }
 
 .navbar-transparent .navbar-nav .active .nav-link .active .nav-link:hover,
@@ -5884,6 +5891,7 @@ License - nucleoapp.com/license/
             text-transform: uppercase;
             font-weight: 600;
             font-size: 16px;
+            font-family: Yekan;
             color: #666666;
         }
 
@@ -6035,6 +6043,7 @@ License - nucleoapp.com/license/
 
     .card a:not(.btn) {
         color: #444444;
+        font-family: Yekan;
     }
 
         .card a:not(.btn):hover,
@@ -8824,6 +8833,7 @@ License - nucleoapp.com/license/
         padding: 14px 16px;
         transition: 0.3s;
         font-size: 17px;
+        font-family: Yekan;
     }
 
         /* Change background color of buttons on hover */
