@@ -1,13 +1,12 @@
 /*!
 
  =========================================================
- * Paper Kit - v2.2.0
+ * Currency Project- v1.0
  =========================================================
 
- * Product Page: https://www.creative-tim.com/product/paper-kit-2
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+ * Copyright 2021 Whereismatin (https://www.github.io/whereismatin)
 
- * Designed by www.invisionapp.com Coded by www.creative-tim.com
+ * Designed by Whereismatin
 
  =========================================================
 
@@ -3078,7 +3077,7 @@ select,
 textarea {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: Yekan-bakh;
+    font-family: Yekan;
     font-weight: 300;
 }
 
