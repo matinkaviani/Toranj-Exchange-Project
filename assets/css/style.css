@@ -8544,7 +8544,9 @@ License - nucleoapp.com/license/
         height: 2px;
         background: #37dba9;
         bottom: -13px;
-        left: 46%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s;
     }
 /*.overlay {
     content: "";
@@ -8930,6 +8932,7 @@ select:focus, button:focus {
 }
 .breadcrumbm {
     background: url('../img/header.jpg');
+    background-position-x: right;
 }
 .navbar.navbar-white {
     background: #fff !important;
@@ -8959,4 +8962,83 @@ li.breadcrumb-item {
 .bread-title {
     padding: .75rem 2.6rem;
     font-size: 25px;
+}
+.max-w-250 {
+    max-width: 250px;
+    margin-left: auto;
+}
+.font-10 {
+    font-size: 10px !important;
+}
+
+.font-11 {
+    font-size: 11px !important;
+}
+
+.font-12 {
+    font-size: 12px !important;
+}
+
+.font-13 {
+    font-size: 13px !important;
+}
+.font-14 {
+    font-size: 14px !important;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+.font-18 {
+    font-size: 18px !important;
+}
+.font-19 {
+    font-size: 19px !important;
+}
+.font-20 {
+    font-size: 20px !important;
+}
+
+.font-25 {
+    font-size: 25px !important;
+}
+.bold {
+    font-weight: bold;
+}
+.news-img img {
+    border-radius: .25rem;
+    transition: all .3s;
+}
+.news-card p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.news-card h2:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    right: -10px;
+    background: #37dba9;
+    display: flex;
+}
+.title-after:hover:after {
+    width: 150px;
+}
+.news-img {
+    overflow: hidden;
+    border-radius: .25rem;
+}
+.news-img:hover > img {
+    transform: scale(1.1);
+}
+.border {
+    border-radius: .25rem;
+}
+.text-black {
+    color: #66615b;
+}
+.text-black:hover, .text-black:focus {
+    color: inherit;
 }
