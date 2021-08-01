@@ -8923,3 +8923,40 @@ select:focus, button:focus {
     right: -10px;
     top: 5%;
 }
+.bread-title ul {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+}
+.breadcrumbm {
+    background: url('../img/header.jpg');
+}
+.navbar.navbar-white {
+    background: #fff !important;
+    padding-top: 25px;
+    box-shadow: none;
+}
+.breadcrumb {
+    background: transparent;
+    justify-content: flex-start;
+    direction: rtl;
+}
+
+.breadcrumb-item.active {
+    color: #24cb98;
+}
+
+li.breadcrumb-item a {
+    color: white;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-left: .5rem;
+    color: white;
+}
+li.breadcrumb-item {
+    font-size: 18px;
+}
+.bread-title {
+    padding: .75rem 2.6rem;
+    font-size: 25px;
+}
