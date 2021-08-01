@@ -7131,6 +7131,12 @@ License - nucleoapp.com/license/
 /*          Changes for small display      */
 
 @media (max-width: 767px) {
+    li.breadcrumb-item.active {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-top: 15px;
+    }
     #cd-vertical-nav {
         display: none !important;
     }
@@ -8456,6 +8462,9 @@ License - nucleoapp.com/license/
         max-width: 170px !important;
     }
 }
+.line-h-2 {
+    line-height: 30px;
+}
 .line-h-3 {
     line-height: 34px;
 }
@@ -8481,6 +8490,7 @@ License - nucleoapp.com/license/
 .btn-gold {
     background-image: linear-gradient( 284deg, #37dba9 48%, #01ad79);
     border: solid 1px transparent;
+    transition: all .3s;
 }
 
 .opacity-1 {
@@ -8933,6 +8943,7 @@ select:focus, button:focus {
 .breadcrumbm {
     background: url('../img/header.jpg');
     background-position-x: right;
+    background-size: cover;
 }
 .navbar.navbar-white {
     background: #fff !important;
@@ -8985,9 +8996,11 @@ li.breadcrumb-item {
 .font-14 {
     font-size: 14px !important;
 }
-
 .font-15 {
     font-size: 15px !important;
+}
+.font-16 {
+    font-size: 16px !important;
 }
 .font-18 {
     font-size: 18px !important;
@@ -9002,6 +9015,9 @@ li.breadcrumb-item {
 .font-25 {
     font-size: 25px !important;
 }
+.font-30 {
+    font-size: 30px !important;
+}
 .bold {
     font-weight: bold;
 }
@@ -9014,7 +9030,7 @@ li.breadcrumb-item {
     line-height: 25px;
     margin-top: 20px;
 }
-.news-card h2:before {
+.news-card h2:before, .news-title:before {
     content: "";
     position: absolute;
     width: 3px;
@@ -9035,10 +9051,34 @@ li.breadcrumb-item {
 }
 .border {
     border-radius: .25rem;
+    line-height:0;
 }
 .text-black {
     color: #66615b;
 }
 .text-black:hover, .text-black:focus {
     color: inherit;
+}
+.radius {
+    border-radius: .25rem;
+}
+.news-d-date {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    color: #fff;
+    background: #19c18e;
+    padding: 9px;
+    padding-left: 29px;
+    display: flex;
+    flex-flow: column;
+    font-size: 14px;
+    line-height: 25px;
+    direction: ltr;
+    border-radius: 0 .25rem .25rem 0;
+}
+.newsshortdes {
+    background: #f7f7f7;
+    padding: 10px 20px;
+    margin-top: 25px;
 }
