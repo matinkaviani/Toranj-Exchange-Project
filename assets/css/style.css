@@ -7137,6 +7137,7 @@ License - nucleoapp.com/license/
         overflow: hidden;
         padding-top: 15px;
     }
+
     #cd-vertical-nav {
         display: none !important;
     }
@@ -8462,15 +8463,19 @@ License - nucleoapp.com/license/
         max-width: 170px !important;
     }
 }
+
 .line-h-2 {
     line-height: 30px;
 }
+
 .line-h-3 {
     line-height: 34px;
 }
+
 .line-h-4 {
     line-height: 54px;
 }
+
 .line-h-5 {
     line-height: 74px;
 }
@@ -8875,20 +8880,22 @@ select:focus, button:focus {
 .display-block {
     display: block;
 }
+
 .formtabs {
     background-color: #f1f1f1;
 }
-.formtabs select {
-    direction: rtl;
-    border-color: #dddddd;
-    flex: initial !important;
-    width: auto !important;
-}
 
-.formtabs input::placeholder {
-    text-align: right;
-    margin-right: 10px;
-}
+    .formtabs select {
+        direction: rtl;
+        border-color: #dddddd;
+        flex: initial !important;
+        width: auto !important;
+    }
+
+    .formtabs input::placeholder {
+        text-align: right;
+        margin-right: 10px;
+    }
 
 .reffer-code {
     padding: 10px !important;
@@ -8909,47 +8916,57 @@ select:focus, button:focus {
 .footer.footer-dark {
     background-color: #0b1011;
 }
+
 .font-18 {
     font-size: 18px;
 }
+
 .font-24 {
     font-size: 24px;
 }
+
 .floating-label {
     position: absolute;
     left: 15px;
     top: 12px;
 }
+
 .en-font {
     font-family: Yekan-bakh;
 }
+
 .side-title {
     position: relative;
 }
-.side-title:before {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 25px;
-    background: #37dba9;
-    right: -10px;
-    top: 5%;
-}
+
+    .side-title:before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 25px;
+        background: #37dba9;
+        right: -10px;
+        top: 5%;
+    }
+
 .bread-title ul {
     display: inline-flex;
     align-items: center;
     margin: 0;
 }
+
 .breadcrumbm {
     background: url('../img/header.jpg');
     background-position-x: right;
     background-size: cover;
 }
+
 .navbar.navbar-white {
     background: #fff !important;
     padding-top: 25px;
     box-shadow: none;
 }
+
 .breadcrumb {
     background: transparent;
     justify-content: flex-start;
@@ -8963,21 +8980,26 @@ select:focus, button:focus {
 li.breadcrumb-item a {
     color: white;
 }
-.breadcrumb-item+.breadcrumb-item::before {
+
+.breadcrumb-item + .breadcrumb-item::before {
     padding-left: .5rem;
     color: white;
 }
+
 li.breadcrumb-item {
     font-size: 18px;
 }
+
 .bread-title {
     padding: .75rem 2.6rem;
     font-size: 25px;
 }
+
 .max-w-250 {
     max-width: 250px;
     margin-left: auto;
 }
+
 .font-10 {
     font-size: 10px !important;
 }
@@ -8993,21 +9015,27 @@ li.breadcrumb-item {
 .font-13 {
     font-size: 13px !important;
 }
+
 .font-14 {
     font-size: 14px !important;
 }
+
 .font-15 {
     font-size: 15px !important;
 }
+
 .font-16 {
     font-size: 16px !important;
 }
+
 .font-18 {
     font-size: 18px !important;
 }
+
 .font-19 {
     font-size: 19px !important;
 }
+
 .font-20 {
     font-size: 20px !important;
 }
@@ -9015,21 +9043,26 @@ li.breadcrumb-item {
 .font-25 {
     font-size: 25px !important;
 }
+
 .font-30 {
     font-size: 30px !important;
 }
+
 .bold {
     font-weight: bold;
 }
+
 .news-img img {
     border-radius: .25rem;
     transition: all .3s;
 }
+
 .news-card p {
     font-size: 14px;
     line-height: 25px;
     margin-top: 20px;
 }
+
 .news-card h2:before, .news-title:before {
     content: "";
     position: absolute;
@@ -9039,29 +9072,37 @@ li.breadcrumb-item {
     background: #37dba9;
     display: flex;
 }
+
 .title-after:hover:after {
     width: 150px;
 }
+
 .news-img {
     overflow: hidden;
     border-radius: .25rem;
 }
-.news-img:hover > img {
-    transform: scale(1.1);
-}
+
+    .news-img:hover > img {
+        transform: scale(1.1);
+    }
+
 .border {
     border-radius: .25rem;
-    line-height:0;
+    line-height: 0;
 }
+
 .text-black {
     color: #66615b;
 }
-.text-black:hover, .text-black:focus {
-    color: inherit;
-}
+
+    .text-black:hover, .text-black:focus {
+        color: inherit;
+    }
+
 .radius {
     border-radius: .25rem;
 }
+
 .news-d-date {
     position: absolute;
     top: 10%;
@@ -9077,8 +9118,81 @@ li.breadcrumb-item {
     direction: ltr;
     border-radius: 0 .25rem .25rem 0;
 }
+
 .newsshortdes {
     background: #f7f7f7;
     padding: 10px 20px;
     margin-top: 25px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 0px 30px;
+    border-radius: 4px;
+}
+
+.accordion {
+    margin: 0;
+}
+
+.acc-container {
+    margin: 0 0 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.acc-title {
+    max-width: 100%;
+    background: #222;
+    color: #FFF;
+    border-radius: 4px;
+    padding: 14px 20px;
+    font-weight: normal;
+    position: relative;
+    transition: all .3s ease-in-out;
+    user-select: none;
+    text-align: right;
+}
+
+    .acc-active .acc-title,
+    .acc-title:hover {
+        background: #15be8b;
+        cursor: pointer;
+    }
+
+    .acc-title:after {
+        content: "\f067"; /*Plus sign*/
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        margin-top: -12.5px;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        font-family: 'FontAwesome';
+        transition: all .5s;
+    }
+
+.acc-active .acc-title:after {
+    content: "\f068"; /*Minus sign*/
+}
+
+.acc-content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    padding: 0 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.acc-active .acc-content {
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    opacity: 1;
+    direction: rtl;
+    text-align: right;
 }
