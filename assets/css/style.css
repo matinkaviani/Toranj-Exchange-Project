@@ -9243,3 +9243,20 @@ li.breadcrumb-item {
 .input-group .form-control, .input-group-addon, .input-group-btn {
     display: table-cell;
 }
+.radius {
+    border-radius: .25rem !important;
+}
+.gallery-row h4 {
+    position: relative;
+}
+    .gallery-row h4:after {
+        position: absolute;
+        content: "";
+        width: 85px;
+        height: 1px;
+        background: #37dba9;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s;
+    }
