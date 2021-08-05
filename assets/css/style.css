@@ -9110,9 +9110,10 @@ li.breadcrumb-item {
     color: #fff;
     background: #19c18e;
     padding: 9px;
-    padding-left: 29px;
+    padding-left: 15px;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    align-items: center;
     font-size: 14px;
     line-height: 25px;
     direction: ltr;
@@ -9120,7 +9121,7 @@ li.breadcrumb-item {
 }
 
 .newsshortdes {
-    background: #f7f7f7;
+    background: #dadada7a;
     padding: 10px 20px;
     margin-top: 25px;
 }
@@ -9260,3 +9261,8 @@ li.breadcrumb-item {
         transform: translateX(-50%);
         transition: all .3s;
     }
+.recoverpass {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
